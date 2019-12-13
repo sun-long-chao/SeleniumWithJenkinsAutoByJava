@@ -20,15 +20,15 @@ pipeline{
 	        }
 	    }
 	    stage("Git Checkout"){
-	        steps{
-	            script{
-	                node(win_node) {
-	                     checkout([$class: 'GitSCM', branches: [[name: '*/master']],
-						    userRemoteConfigs: [[credentialsId: '6f4fa66c-eb02-46dc-a4b3-3a232be5ef6e', 
-							url: 'https://github.com/QAAutomationLearn/JavaAutomationFramework.git']]])
-	                }
-	            }
-	        }
+	        //steps{
+	          //  script{
+	         //       node(win_node) {
+	         //            checkout([$class: 'GitSCM', branches: [[name: '*/master']],
+			//			    userRemoteConfigs: [[credentialsId: '6f4fa66c-eb02-46dc-a4b3-3a232be5ef6e', 
+			//				url: 'https://github.com/QAAutomationLearn/JavaAutomationFramework.git']]])
+	         //       }
+	         //   }
+	        //}
 	    }
 	    
         
